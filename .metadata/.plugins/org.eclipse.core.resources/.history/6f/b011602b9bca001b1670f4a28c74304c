@@ -1,0 +1,30 @@
+package project;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+public class facultydash {
+	
+	@Test
+    public static void testcse1() {
+    	System.setProperty("webdriver.chrome.driver", "C:\\web browser\\chromedriver.exe");
+		ChromeDriver driver = new ChromeDriver();
+		driver.get("http://localhost:5000/faculty");
+		driver.findElement(By.id("Username")).sendKeys("Dr. Swapna");
+		driver.findElement(By.id("Password")).sendKeys("654248");
+		driver.findElement(By.id("submit")).click();
+		
+		System.out.println("Testcase 2 Passed");
+    }
+	
+
+
+
+public static void main(String[] args) {
+	
+	testcse1();
+	
+
+}
+}

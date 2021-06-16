@@ -1,0 +1,25 @@
+package project;
+import org.openqa.selenium.By;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+public class faq {
+	
+	@Test
+	public static void testcse1() {
+    	System.setProperty("webdriver.chrome.driver","C:\\web browser\\chromedriver.exe");
+		ChromeDriver driver = new ChromeDriver();
+		driver.get("http://localhost:5000/faq");
+		
+		System.out.println("Testcase 1 Passed");
+    }
+	
+public static void main(String[] args) {
+		
+		testcse1();
+		
+		
+		
+	}
+
+}

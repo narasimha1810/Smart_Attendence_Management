@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-06-12T15:34:53 IST" name="Default suite" finished-at="2021-06-12T15:35:12 IST" duration-ms="18650">
+    <groups>
+    </groups>
+    <test started-at="2021-06-12T15:34:53 IST" name="Default test" finished-at="2021-06-12T15:35:12 IST" duration-ms="18650">
+      <class name="project.facultydash">
+        <test-method signature="testcse1()[pri:0, instance:project.facultydash@757acd7b]" started-at="2021-06-12T15:34:53 IST" name="testcse1" finished-at="2021-06-12T15:34:59 IST" duration-ms="5593" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcse1 -->
+        <test-method signature="testcse2()[pri:0, instance:project.facultydash@757acd7b]" started-at="2021-06-12T15:34:59 IST" name="testcse2" finished-at="2021-06-12T15:35:04 IST" duration-ms="5368" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcse2 -->
+        <test-method signature="testcse3()[pri:0, instance:project.facultydash@757acd7b]" started-at="2021-06-12T15:35:04 IST" name="testcse3" finished-at="2021-06-12T15:35:12 IST" duration-ms="7645" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcse3 -->
+      </class> <!-- project.facultydash -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,100 @@
+package project;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+public class admin {
+
+	
+	@Test
+	public static void testcse1() {
+		System.setProperty("webdriver.chrome.driver", "C:\\web browser\\chromedriver.exe");
+		ChromeDriver driver = new ChromeDriver();
+		driver.get("http://localhost:5000\admin");
+	    System.out.println("Testcase 1 Passed");
+		
+	}
+	@Test
+    public static void testcse2() {
+    	System.setProperty("webdriver.chrome.driver", "C:\\web browser\\chromedriver.exe");
+		ChromeDriver driver = new ChromeDriver();
+		driver.get("http://localhost:5000/admin");
+		driver.findElement(By.id("Username")).sendKeys("Dr. Swapna");
+		driver.findElement(By.id("Password")).sendKeys("654248");
+		driver.findElement(By.id("submit")).click();
+		
+		System.out.println("Testcase 2 Passed");
+    }
+	
+    /*
+     @Test
+     
+	public static void testcse3() {
+		System.setProperty("webdriver.chrome.driver", "C:\\\\browser driver\\\\chromedriver.exe");
+		ChromeDriver driver = new ChromeDriver();
+		driver.get("http://localhost:5000/admin");
+		
+		driver.findElement(By.cssSelector("p.fs:nth-child(7) > a:nth-child(1)")).click();
+		System.out.println("Testcase 3 Passed");
+	}
+	@Test
+	public static void testcse4() {
+		System.setProperty("webdriver.chrome.driver", "C:\\\\browser driver\\\\chromedriver.exe");
+		ChromeDriver driver = new ChromeDriver();
+		driver.get("http://localhost:5000/forgot.html");
+		
+		driver.findElement(By.cssSelector(".btn")).click();
+		System.out.println("Testcase 4 Passed");
+	}
+	@Test
+	public static void testcse5() {
+		System.setProperty("webdriver.chrome.driver", "C:\\\\browser driver\\\\chromedriver.exe");
+		ChromeDriver driver = new ChromeDriver();
+		driver.get("http://localhost:5000/forgot.html");
+		driver.findElement(By.id("uname")).sendKeys("Narasimha@gmail.com");
+		driver.findElement(By.cssSelector(".btn")).click();
+		System.out.println("Testcase 5 Passed");
+	}
+	@Test
+	public static void testcse6() {
+		System.setProperty("webdriver.chrome.driver", "C:\\browser driver\\chromedriver.exe");
+		ChromeDriver driver = new ChromeDriver();
+		driver.get("http://localhost:5000/admin");
+		driver.findElement(By.id("Username")).sendKeys("Narasimha");
+		driver.findElement(By.id("Password")).sendKeys("12345");
+		driver.findElement(By.id("submit")).click();
+		System.out.println("Credentials are Incorrect");
+		System.out.println("Testcase 6 Passed");
+		
+	}
+	@Test
+	public static void testcse7() {
+		System.setProperty("webdriver.chrome.driver", "C:\\browser driver\\chromedriver.exe");
+		ChromeDriver driver = new ChromeDriver();
+		driver.get("http://localhost:5000/admindash");
+		driver.findElement(By.cssSelector("body > header > div.right_area > a")).click();
+		System.out.println("Testcase 7 Passed");
+	}
+		*/
+		
+	
+
+	
+
+	public static void main(String[] args) {
+		
+		testcse1();
+		testcse2();
+		/*testcse4();
+		testcse5();
+		testcse6();
+		testcse3();
+		testcse7();*/
+		
+
+	}
+
+}
+
+
